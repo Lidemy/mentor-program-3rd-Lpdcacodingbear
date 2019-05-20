@@ -16,19 +16,21 @@
 2. 408 Request Timeout: 請求超時。根據HTTP規範，用戶端沒有在伺服器預備等待的時間內完成一個請求的傳送，用戶端可以隨時再次提交這一請求而無需進行任何更改。
 3. 502 Bad Gateway: 作為閘道器或者代理工作的伺服器嘗試執行請求時，從上游伺服器接收到無效的回應。
 ## 假設你現在是個餐廳平台，需要提供 API 給別人串接並提供基本的 CRUD 功能，包括：回傳所有餐廳資料、回傳單一餐廳資料、刪除餐廳、新增餐廳、更改餐廳，你的 API 會長什麼樣子？請提供一份 API 文件。
+
 Base URL: https://exampleapi.restaurants.com/
-| 說明            | Method | path            | 參數                    | 範例                   |
-|-----------------|-------|------------------|------------------------|------------------------|
-| 獲取所有餐廳資料 | GET    | /restaurants     | _limit:限制回傳資料數量 | /restaurants?_limit=13 |
-| 獲取單一餐廳資料 | GET    | /restaurants/:id | 無                     | /foods/11              |
-| 新增餐廳        | POST   | /restaurants     | name: 餐廳名           | 無                     |
-| 刪除餐廳        | DELETE | /restaurants/:id | 無                     | 無                     |
-| 更改餐廳        | PATCH  | /restaurants/:id | name: 餐廳名           | 無                     |
+
+| 說明              | Method           | path | 參數 | 範例 |
+| ---------------- | ---------------- | ---------------- | ---------------------- | ---------------------- |
+| 獲取所有餐廳資料   | GET              | /restaurants     | _limit:限制回傳資料數量 | /restaurants?_limit=13 |
+| 獲取單一餐廳資料   | GET              | /restaurants/:id | 無                     | /foods/11              |
+| 新增餐廳          | POST             | /restaurants     | name: 餐廳名           | 無                      |
+| 刪除餐廳          | DELETE           | /restaurants/:id | 無                     | 無                      |
+| 更改餐廳          | PATCH            | /restaurants/:id | name: 餐廳名           | 無                      |
 
 餐廳資料內容格式：
 {
-	id:'0066'
-	name:'Tomahawk steak'
-	category:'steak'
+	id:'0066',
+	name:'Tomahawk steak',
+	category:'steak',
 	address:'taipei'
 }
