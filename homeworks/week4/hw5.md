@@ -28,9 +28,9 @@ Base URL: https://exampleapi.restaurants.com/
 | 更改餐廳          | PATCH            | /restaurants/:id | name: 餐廳名           | 無                      |
 
 餐廳資料內容格式：
-{
-	id:'0066',
-	name:'Tomahawk steak',
-	category:'steak',
-	address:'taipei'
-}
+`{
+	"id" : 0066,
+	"name" : "Tomahawk steak",
+	"category" : "steak",
+	"address" : "taipei"
+}`
