@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./homeworks/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node your-script.js"
   },
   "husky": {
     "hooks": {
@@ -28,7 +27,8 @@
   },
   "homepage": "https://github.com/aszx87410/program-3rd#readme",
   "dependencies": {
-    "eslint": "^5.15.1"
+    "eslint": "^5.15.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "eslint": "^5.15.1",
